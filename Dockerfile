@@ -54,6 +54,7 @@ COPY req.txt .
 # Allow pip to build from source if binary wheels are not available
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install --no-cache-dir --prefer-binary -r req.txt
+RUN pip install transforms3d imbalanced-learn torchvision
 
 
 # ============================

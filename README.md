@@ -102,6 +102,11 @@ You can download pretrained models here:
 |  Capture-24   |  ~150 | ☑️  |  ☑️  |   ☑️  | [Download](https://wearables-files.ndph.ox.ac.uk/files/ssl/ssl_capture24.mdl) |
 |  Rowlands   |  ~10 | ☑️  |  ☑️  |   ☑️  | [Download](https://wearables-files.ndph.ox.ac.uk/files/ssl/ssl_rowlands.mdl) |
 
+## Instructions for  Dockerised Run
+```bash
+docker-compose build
+docker-compose up -d
+docker exec -it ssl-wearables-container bash
 
 ## Results
 ### Human activity recognition benchmarks
